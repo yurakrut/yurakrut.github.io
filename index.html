@@ -1,0 +1,589 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body data-spy="scroll">
+      <div class="alert alert-danger alert-dismissible fade show d-sm-block d-md-flex d-xl-flex justify-content-center mb-0" role="alert">
+        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">×</span>
+        </button>
+      </div>
+   <header class="sticky-top bg-secondary" id="about">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light" id="navbar-example2">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="true" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img src="https://bootstrap-4.ru/docs/4.3.1/assets/brand/bootstrap-solid.svg" width="40" height="40" alt="">
+          </a>
+          <div class="navbar-collapse collapse show" id="navbarTogglerDemo03">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#prices">Prices</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#faq">FAQ</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle
+                " href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled text-white-50" href="#">Disabled</a>
+              </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter2">Sing up</button>
+            </form>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" style="display: none;" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header border-0 pt-2 pr-2">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body pt-0">
+        <h5 class="text-center">Sign up</h5>
+        <form class="pt-3">
+          <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationCustom01">Name</label>
+      <input type="text" class="form-control" id="validationCustom01" placeholder="Имя" value="Name" required="">
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+
+    <div class="col-md-6 mb-3">
+      <label for="validationDefaultUsername">Username</label>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroupPrepend2">@</span>
+        </div>
+        <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Username" aria-describedby="inputGroupPrepend2" required="">
+      </div>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Password</label>
+      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity">City</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="col-auto my-1">
+      <label class="mr-sm-2" for="inlineFormCustomSelect">Preference</label>
+      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+        <option selected>Choose...</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputZip">Zip</label>
+      <input type="text" class="form-control" id="inputZip">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="custom-control custom-switch">
+  <input type="checkbox" class="custom-control-input" id="customSwitch1">
+  <label class="custom-control-label" for="customSwitch1">Agree to terms and conditions</label>
+</div>
+  </div>
+  <button type="submit" class="btn btn-primary">Sign in</button>
+  <button type="submit" class="btn btn-danger" data-dismiss="modal" aria-label="Close">Close</button>
+</form>
+      </div>
+    </div>
+  </div>
+</div>
+<section class="d-flex justify-content-center">
+    <div class="bd-example">
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+       <img src="https://via.placeholder.com/1920x700" alt="" class="img-fluid">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://via.placeholder.com/1920x700" alt="" class="img-fluid">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://via.placeholder.com/1920x700" alt="" class="img-fluid">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+</section>
+<section id="prices">
+  <div class="container">
+    <nav>
+      <ul class="pt-4">
+        <li class="d-inline"><a href="">Home</a></li>
+        <li class="d-inline"><a href="">/</a></li>
+        <li class="d-inline"><a href="">Library</a></li>
+        <li class="d-inline"><a class="text-secondary" href="">/</a></li>
+        <li class="d-inline"><a class="text-secondary" href="">Data</a></li>
+      </ul>
+    </nav>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <div class="d-flex justify-content-center pt-4 mb-4">
+      <h3>About us</h3>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <img src="https://via.placeholder.com/990x700" alt="" class="img-fluid">
+      </div>
+      <div class="col-sm-6">
+        <h5 class="mt-5">Status:</h5><br>
+        <div class="progress mt-n4">
+    <div class="progress-bar bg-primary" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>25%</span></div>
+</div>
+        <h5 class="mt-3">Status:</h5><br>
+        <div class="progress mt-n4">
+    <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><span>50%</span></div>
+</div>
+        <h5 class="mt-3">Status:</h5><br>
+        <div class="progress mt-n4">
+    <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: 75%" aria-valuenow="14" aria-valuemin="0" aria-valuemax="100"><span>75%</span></div>
+</div>
+        <h5 class="mt-3">Status:</h5><br>
+       <div class="progress mt-n4">
+    <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" style="width: 90%" aria-valuenow="14" aria-valuemin="0" aria-valuemax="100"><span>90%</span></div>
+</div>
+<form class="pt-5">
+              <button type="button" class="btn border-success text-success pl-5 pr-5 font-weight-bold col-sm-12 col-xl-6 col-md-6 video-btn" data-toggle="modal" data-src="https://youtu.be/nMVJxTcU8Kg" data-target="#exampleModalCenter">Watch a video</button>
+            </form>
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" style="display: none;">
+          <div class="modal-dialog modal-lg modal-dialog-centered m-auto" role="video">
+            <div class="modal-content">
+              <div class="modal-body position-relative p-0">
+                <div class="embed-responsive embed-responsive-16by9 embed-responsive-21by9">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/nMVJxTcU8Kg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+  <div class="prices d-flex justify-content-center mt-5">
+    <h3>Prices</h3>
+  </div>
+    <table class="table table-striped table-dark mt-3" border="1">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Имя</th>
+      <th scope="col">Фамилия</th>
+      <th scope="col">Username</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>
+     <tr>
+      <th scope="row">4</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+     <tr>
+      <th scope="row">5</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+     <tr>
+      <th scope="row">6</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+     <tr>
+      <th scope="row">7</th>
+      <td>Larry the Bird</td>
+      <td></td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+  </div>
+</section>
+<section class="pt-5 pb-5" id="portfolio">
+      <div class="container">
+        <h2 class="text-center pb-3">Portfolio</h2>
+        <div class="d-flex justify-content-center">
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade active show" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <div class="row m-0">
+              <div class="col-xl-4 mt-3 mb-3 col-md-4">
+                <div class="card h-100">
+                  <img src="https://via.placeholder.com/900x600.png" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">Lorem ipsum</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur.</p>
+                  </div>
+                  <div class="card-footer border-0 bg-transparent">
+                    <button class="btn btn-primary " type="submit">Button</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 mt-3 mb-3 col-md-4">
+                <div class="card h-100">
+                  <img src="https://via.placeholder.com/900x600.png" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">Lorem ipsum</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  </div>
+                  <div class="card-footer border-0 bg-transparent">
+                    <button class="btn btn-outline-dark w-100" type="submit">Button</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 mt-3 mb-3 col-md-4">
+                <div class="card h-100 ">
+                  <img src="https://via.placeholder.com/900x600.png" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">Lorem ipsum</h5>
+                    <p class="card-text">Lorem ipsum dolor.</p>
+                  </div>
+                  <div class="card-footer border-0 bg-transparent">
+                    <button class="btn btn-success pl-5 pr-5" type="submit">Button</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 mt-3 mb-3 col-md-4">
+                <div class="card h-100">
+                  <img src="https://via.placeholder.com/900x600.png" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">Lorem ipsum</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  </div>
+                  <div class="card-footer border-0 bg-transparent">
+                    <button class="btn btn-danger" type="submit">Button</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 mt-3 mb-3 col-md-4">
+                <div class="card h-100">
+                  <img src="https://via.placeholder.com/900x600.png" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">Lorem ipsum</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  </div>
+                  <div class="card-footer border-0 bg-transparent">
+                    <button class="btn btn-outline-success" type="submit">Button</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <nav aria-label="Page navigation example">
+              <ul class="pagination justify-content-center">
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">«</span>
+                  </a>
+                </li>
+                <li class="page-item active"><a class="page-link" href="#!">1</a></li>
+                <li class="page-item"><a class="page-link" href="#!">2</a></li>
+                <li class="page-item"><a class="page-link" href="#!">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">»</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <div class="row">
+              <div class="col-xl-6">
+                <div class="card mb-3">
+                  <div class="row no-gutters">
+                    <div class="col-md-4">
+                      <img src="https://via.placeholder.com/600x700.png" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-8 d-flex">
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Lorem ipsum</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quisquam. Officia quam qui adipisci quas consequuntur!</p>
+                        <button type="button" class="btn btn-success mt-auto w-25">Button</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6">
+                <div class="card mb-3">
+                  <div class="row no-gutters">
+                    <div class="col-md-4">
+                      <img src="https://via.placeholder.com/600x700.png" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-8 d-flex">
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Lorem ipsum</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <button type="button" class="btn btn-light mt-auto d-block w-25">Button</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6">
+                <div class="card mb-3">
+                  <div class="row no-gutters">
+                    <div class="col-md-4">
+                      <img src="https://via.placeholder.com/600x700.png" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-8 d-flex">
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Lorem ipsum</h5>
+                        <p class="card-text">Lorem ipsum dolor.</p>
+                        <button type="button" class="btn btn-warning w-25 mt-auto">Button</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <nav aria-label="Page navigation example">
+              <ul class="pagination justify-content-center">
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">«</span>
+                  </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#!">1</a></li>
+                <li class="page-item active"><a class="page-link" href="#!">2</a></li>
+                <li class="page-item"><a class="page-link" href="#!">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">»</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla qui fugiat, illum officia reprehenderit incidunt laborum atque consequatur tempora magnam esse, natus, sapiente nisi. Nihil facere mollitia doloremque nesciunt? Alias, sapiente rerum!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+<section id="faq">
+  <div class="container">
+    <div class="d-flex justify-content-center">
+      <h2 class="mt-5">Freqently Asked qestions</h2>
+    </div>
+    <div id="accordion">
+
+  <div class="card mb-2 mt-2">
+          <a class="card-link text-white w-100" data-toggle="collapse" href="#collapseOne">
+    <div class="card-header bg-info w-100">      
+      Question №1
+    </div>
+  </a>
+    <div id="collapseOne" class="collapse show" data-parent="#accordion">
+      <div class="card-body">
+      <p>Build responsive, mobile-first projects on the web with the world’s most <strong>popular</strong> front-end component library.
+Bootstrap is an open source toolkit for developing with HTML, CSS, and JS.</p>
+<p>Quickly prototype your ideas or build your entire app with our Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins built on jQuery.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card mb-2">
+          <a class="collapsed card-link text-white" data-toggle="collapse" href="#collapseTwo">
+    <div class="card-header bg-info">
+           Question №2
+    </div>
+  </a>
+    <div id="collapseTwo" class="collapse" data-parent="#accordion">
+      <div class="card-body">
+       <p>Build responsive, mobile-first projects on the web with the world’s most popular front-end component library.
+Bootstrap is an open source toolkit for developing with HTML, CSS, and JS.</p>
+<p>Quickly prototype your ideas or build your entire app with our Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins built on jQuery.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="card mb-2">
+          <a class="collapsed card-link text-white" data-toggle="collapse" href="#collapseThree">
+    <div class="card-header bg-info">
+   Question №3
+    </div>
+  </a>
+    <div id="collapseThree" class="collapse" data-parent="#accordion">
+      <div class="card-body">
+      <p>Build responsive, mobile-first projects on the web with the world’s most popular front-end component library.
+Bootstrap is an open source toolkit for developing with HTML, CSS, and JS.</p>
+<p>Quickly prototype your ideas or build your entire app with our Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins built on jQuery.</p>
+      </div>
+    </div>
+  </div>
+  <div class="card mb-2">
+          <a class="collapsed card-link text-white" data-toggle="collapse" href="#collapseFour">
+    <div class="card-header bg-info">
+        Question №4
+    </div>
+  </a>
+    <div id="collapseFour" class="collapse" data-parent="#accordion">
+      <div class="card-body">
+       <p>Build responsive, mobile-first projects on the web with the world’s most popular front-end component library.
+Bootstrap is an open source toolkit for developing with HTML, CSS, and JS.</p>
+<p>Quickly prototype your ideas or build your entire app with our Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins built on jQuery.</p>
+      </div>
+    </div>
+  </div>
+  <div class="card mb-5">
+          <a class="collapsed card-link text-white" data-toggle="collapse" href="#collapseFive">
+    <div class="card-header bg-info">
+        Question №5
+    </div>
+  </a>
+    <div id="collapseFive" class="collapse" data-parent="#accordion">
+      <div class="card-body">
+       <p>Build responsive, mobile-first projects on the web with the world’s most popular front-end component library.
+Bootstrap is an open source toolkit for developing with HTML, CSS, and JS.</p>
+<p>Quickly prototype your ideas or build your entire app with our Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins built on jQuery.</p>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+<footer class="bg-dark h-auto">
+  <div class="container">
+    <div class="row">
+    <div class="col-lg-4 mt-5">
+      <a href="" class="text-warning">Link 1</a><br>
+      <a href="" class="text-warning">Link link 2</a><br>
+      <a href="" class="text-warning">Link link link 3</a><br>
+      <a href="" class="text-warning">Link 4</a>
+    </div>
+    <div class="col-lg-4 mt-5">
+     <a href="" class="text-danger">Link 1</a><br>
+      <a href="" class="text-danger">Link link 2</a><br>
+      <a href="" class="text-danger">Link link link 3</a><br>
+      <a href="" class="text-danger">Link 4</a>
+    </div>
+    <div class="col-lg-4 mt-5">
+      <a href="" class="text-success">Link 1</a><br>
+      <a href="" class="text-success">Link link 2</a><br>
+      <a href="" class="text-success">Link link link 3</a><br>
+      <a href="" class="text-success">Link 4</a>
+    </div>
+    </div>
+    <div class="d-flex justify-content-center mt-5">
+        <span class="text-white pb-3">© Copyright 2015-2019 Upwork<sup>®</sup> Global lnk.</span>
+    </div>
+  </div>
+</footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://kit.fontawesome.com/f7288606c7.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
