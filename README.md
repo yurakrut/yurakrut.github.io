@@ -1,1 +1,0 @@
-# yurakrut.github.io
